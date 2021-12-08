@@ -1,0 +1,218 @@
+/*
+ * @name        IRC
+ * @author      Kylie McClain / jan Kali
+ * @version     0.1
+ * @description it looks like IRC
+ * @website     https://somas.is
+ * @source      https://git.mutiny.red/somasis/discord-theme-irc
+ * @updateUrl   https://github.com/somasis/discord-theme-irc/raw/main/irc.css
+ */
+
+/* make more native-ish */
+:root {
+    /* Use system fonts. */
+    --font-primary: sans !important;
+    --font-code: monospace !important;
+    --font-display: sans !important;
+}
+
+.tooltip-2QfLtc {
+    /* Allow tooltips to be a little longer to account for possible
+       system font size differences. */
+    max-width: 480px;
+}
+
+.textArea-12jD-V,
+.after_inlineCode-1KfVgj,
+.before_inlineCode-1G9rTK,
+.inlineCode-2ngu6Y,
+.markup-2BOw-j pre,
+.markup-2BOw-j code,
+.codeBlockText-9TnoxQ,
+.codeLine-14BKbG {
+    /* Enlarge monospaced fonts to match the sans-serif.
+       Use monospace for the conversation view and text entry. */
+    font-family: var(--font-code) !important;
+    font-size: 12pt !important;
+}
+
+/* IRC styling. */
+.chat-3bRxxu .compact-T3H92H,
+.form-2fGMdU {
+    /* Monospace chat font. */
+    font-family: monospace !important;
+}
+
+.compact-T3H92H .username-1A8OIy::before,
+.compact-2zYMSo.container-3-pyIM .anchor-3Z-8Bb::before {
+    /* IRC-style username display. */
+    content: "<";
+}
+
+.compact-T3H92H .username-1A8OIy::after,
+.compact-2zYMSo.container-3-pyIM .anchor-3Z-8Bb::after {
+    content: ">";
+}
+
+/* align things more compactly */
+.compact-T3H92H .attachButton-2WznTc {
+    /* Ensure attach button is 1rem from sidebar.
+       We want to align all the text in the conversation view to its left edge. */
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.compact-T3H92H .repliedMessage-VokQwo {
+    /* Align message replies with <usernames>. */
+    padding-left: 0px !important;
+    margin-left: 0.5rem !important;
+    text-indent: 0px !important;
+}
+
+.compact-T3H92H .contents-2mQqc9 {
+    /* Align text-wrap with start of usernames.
+       FIXME: why on earth are these numbers so specific? */
+    margin-left: -4.4rem !important;
+    padding-left: 4.95rem !important;
+    text-indent: -4.45rem !important;
+}
+
+.compact-T3H92H .container-1ov-mD {
+    /* Align extras (attachments, buttons, embeds, images, etc.) with <usernames> . */
+    padding-left: 0.55rem;
+    font-size: 1rem;
+    padding-bottom: 0;
+}
+
+.compact-2zYMSo.container-3-pyIM .iconContainer-3GkGRf {
+    /* Align join message icons with timestamps */
+    margin-right: 7.5px;
+    margin-left: 11px;
+}
+
+/* conversation view */
+.group-spacing-0 .groupStart-23k01U {
+    /* Remove un-customizable message spacing. */
+    margin-top: 0rem;
+}
+
+.compact-T3H92H.wrapper-2a6GCs {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.compact-T3H92H .header-23xsNx .timestamp-3ZCmNB {
+    /* Make timestamp font same size as message text. */
+    font-size: 1rem !important;
+    width: 4rem !important;
+    margin: 0px !important;
+    text-align: initial;
+}
+
+.compact-T3H92H .header-23xsNx .timestampVisibleOnHover-2bQeI4 {
+    /* Always show timestamps. */
+    opacity: 1 !important;
+}
+
+.compact-T3H92H .messageContent-2qWWxC .emoji.jumboable {
+    /* Jumbo emojis in compact mode */
+    width: 3rem;
+    height: 3rem;
+    min-height: 3rem;
+    vertical-align: text-top;
+}
+
+.divider-3_HH5L {
+    /* Make unread divider full length of conversation view. */
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.unreadPill-2HyYtt {
+    /* Minimal unread divider (remove "NEW"). */
+    display: none;
+}
+
+.markup-2BOw-j code,
+.codeView-1JPDeA {
+    line-height: 1.25;
+}
+
+/* conversation text entry styling */
+.form-2fGMdU {
+    /* Make it blend into the conversation view, as though typing into a terminal. */
+    padding: 0px;
+    min-height: 48px;
+    background: var(--background-primary);
+}
+
+.scrollableContainer-2NUZem {
+    background: var(--background-primary);
+}
+
+.form-2fGMdU .inner-MADQqc {
+    /* Vertically center-align text area contents. */
+    margin: 0px;
+    margin-top: 4.5px;
+    margin-bottom: 4.5px;
+}
+
+.form-2fGMdU .channelTextArea-rNsIhG {
+    margin-bottom: 0px;
+}
+
+.scroller-2LSbBU {
+    /* Adjust scroller padding appropriately. */
+    margin-bottom: -4px;
+}
+
+.scrollerSpacer-avRLaA {
+    height: 12px;
+}
+
+.typing-2GQL18 {
+    /* Compact typing indicator. */
+    margin-left: -0.125rem;
+    margin-bottom: -0.3rem;
+    font-size: 0.65rem;
+}
+
+.ellipsis-19qdx6 {
+    display: none !important;
+}
+
+/* conversation view > message styling */
+.repliedMessage-VokQwo:before,
+.replyBadge-r1su3o {
+    /* Hide reply badges, and the connecting line, as we signify replies with colors and
+       the text style is unusual enough anyway to be obvious. */
+    display: none !important;
+}
+
+.message-2qnXI6:hover {
+    /* Brighten messages on hover */
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.message-2qnXI6.mentioned-xhSam7:hover {
+    /* Color-code mention, brighten on hover. */
+    background-color: rgba(250, 166, 26, 0.1);
+}
+
+.message-2qnXI6.hasReply-34In-r {
+    /* Color-code reply, brighten on hover. */
+    background-color: rgba(114, 137, 218, 0.05);
+}
+
+.message-2qnXI6.hasReply-34In-r:hover {
+    background-color: rgba(114, 137, 218, 0.1);
+}
+
+.message-2qnXI6.hasReply-34In-r.mentioned-xhSam7 {
+    /* Color-code reply+mention, brighten on hover. */
+    background-color: rgba(250, 166, 26, 0.05);
+}
+
+.message-2qnXI6.hasReply-34In-r.mentioned-xhSam7:hover {
+    background-color: rgba(250, 166, 26, 0.1);
+}

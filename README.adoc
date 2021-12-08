@@ -1,0 +1,4 @@
+= discord-theme-irc
+
+It makes Discord look more like IRC than compact mode does by default.
+

@@ -1,0 +1,9 @@
+{
+    "name": "IRC",
+    "description": "A Powercord theme that makes Discord look more like IRC.",
+    "version": "0.1",
+    "author": "jan Kali / Kylie McClain",
+    "theme": "irc.css",
+    "license": "public domain",
+    "website": "https://git.mutiny.red/somasis/discord-theme-irc"
+}
