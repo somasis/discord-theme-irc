@@ -19,7 +19,7 @@
 .tooltip-2QfLtc {
     /* Allow tooltips to be a little longer to account for possible
        system font size differences. */
-    max-width: 480px;
+    max-width: 16rem;
 }
 
 .textArea-12jD-V,
@@ -33,7 +33,7 @@
     /* Enlarge monospaced fonts to match the sans-serif.
        Use monospace for the conversation view and text entry. */
     font-family: var(--font-code) !important;
-    font-size: 12pt !important;
+    font-size: 1rem !important;
 }
 
 /* IRC styling. */
@@ -58,15 +58,15 @@
 .compact-T3H92H .attachButton-2WznTc {
     /* Ensure attach button is 1rem from sidebar.
        We want to align all the text in the conversation view to its left edge. */
-    margin: 0px !important;
-    padding: 0px !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .compact-T3H92H .repliedMessage-VokQwo {
     /* Align message replies with <usernames>. */
-    padding-left: 0px !important;
+    padding-left: 0 !important;
     margin-left: 0.5rem !important;
-    text-indent: 0px !important;
+    text-indent: 0 !important;
 }
 
 .compact-T3H92H .contents-2mQqc9 {
@@ -105,7 +105,7 @@
     /* Make timestamp font same size as message text. */
     font-size: 1rem !important;
     width: 4rem !important;
-    margin: 0px !important;
+    margin: 0 !important;
     text-align: initial;
 }
 
@@ -124,8 +124,8 @@
 
 .divider-3_HH5L {
     /* Make unread divider full length of conversation view. */
-    margin-left: 0px !important;
-    margin-right: 0px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 .unreadPill-2HyYtt {
@@ -141,8 +141,7 @@
 /* conversation text entry styling */
 .form-2fGMdU {
     /* Make it blend into the conversation view, as though typing into a terminal. */
-    padding: 0px;
-    min-height: 48px;
+    padding: 0;
     background: var(--background-primary);
 }
 
@@ -152,22 +151,22 @@
 
 .form-2fGMdU .inner-MADQqc {
     /* Vertically center-align text area contents. */
-    margin: 0px;
+    margin: 0;
     margin-top: 4.5px;
     margin-bottom: 4.5px;
 }
 
 .form-2fGMdU .channelTextArea-rNsIhG {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .scroller-2LSbBU {
     /* Adjust scroller padding appropriately. */
-    margin-bottom: -4px;
+    margin-bottom: 0;
 }
 
 .scrollerSpacer-avRLaA {
-    height: 12px;
+    height: 0.5rem;
 }
 
 .typing-2GQL18 {
