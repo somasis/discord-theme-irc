@@ -12,8 +12,8 @@
 :root {
     /* Use system fonts. */
     --font-primary: sans !important;
-    --font-code: monospace !important;
     --font-display: sans !important;
+    --font-code: monospace !important;
 }
 
 .tooltip-2QfLtc {
@@ -40,7 +40,7 @@
 .chat-3bRxxu .compact-T3H92H,
 .form-2fGMdU {
     /* Monospace chat font. */
-    font-family: monospace !important;
+    font-family: var(--font-code) !important;
 }
 
 .compact-T3H92H .username-1A8OIy::before,
