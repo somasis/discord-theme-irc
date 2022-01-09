@@ -16,20 +16,20 @@
     --font-code: monospace !important;
 }
 
-.tooltip-2QfLtc {
+.tooltip-14MtrL {
     /* Allow tooltips to be a little longer to account for possible
        system font size differences. */
     max-width: 16rem;
 }
 
-.textArea-12jD-V,
-.after_inlineCode-1KfVgj,
-.before_inlineCode-1G9rTK,
-.inlineCode-2ngu6Y,
-.markup-2BOw-j pre,
-.markup-2BOw-j code,
-.codeBlockText-9TnoxQ,
-.codeLine-14BKbG {
+.textArea-2CLwUE,
+.after_inlineCode-WydEur,
+.before_inlineCode-xn8Llh,
+.inlineCode-2auMQi,
+.markup-eYLPri pre,
+.markup-eYLPri code,
+.codeBlockText-311wOq,
+.codeLine-3a3dbd {
     /* Enlarge monospaced fonts to match the sans-serif.
        Use monospace for the conversation view and text entry. */
     font-family: var(--font-code) !important;
@@ -37,39 +37,39 @@
 }
 
 /* IRC styling. */
-.chat-3bRxxu .compact-T3H92H,
-.form-2fGMdU {
+.chat-2ZfjoI .compact-2Nkcau,
+.form-3gdLxP {
     /* Monospace chat font. */
     font-family: var(--font-code) !important;
 }
 
-.compact-T3H92H .username-1A8OIy::before,
-.compact-2zYMSo.container-3-pyIM .anchor-3Z-8Bb::before {
+.compact-2Nkcau .username-h_Y3Us::before,
+.compact-2Nkcau .compact-3bMNvi .anchor-1MIwyf:first-child::before {
     /* IRC-style username display. */
     content: "<";
 }
 
-.compact-T3H92H .username-1A8OIy::after,
-.compact-2zYMSo.container-3-pyIM .anchor-3Z-8Bb::after {
+.compact-2Nkcau .username-h_Y3Us::after,
+.compact-2Nkcau .compact-3bMNvi .anchor-1MIwyf:first-child::after {
     content: ">";
 }
 
 /* align things more compactly */
-.compact-T3H92H .attachButton-2WznTc {
+.compact-2Nkcau .attachButton-_ACFSu {
     /* Ensure attach button is 1rem from sidebar.
        We want to align all the text in the conversation view to its left edge. */
     margin: 0 !important;
     padding: 0 !important;
 }
 
-.compact-T3H92H .repliedMessage-VokQwo {
+.compact-2Nkcau .repliedMessage-3Z6XBG {
     /* Align message replies with <usernames>. */
     padding-left: 0 !important;
     margin-left: 0.5rem !important;
     text-indent: 0 !important;
 }
 
-.compact-T3H92H .contents-2mQqc9 {
+.compact-2Nkcau .contents-2MsGLg {
     /* Align text-wrap with start of usernames.
        FIXME: why on earth are these numbers so specific? */
     margin-left: -4.4rem !important;
@@ -77,31 +77,31 @@
     text-indent: -4.45rem !important;
 }
 
-.compact-T3H92H .container-1ov-mD {
+.compact-2Nkcau .container-2sjPya {
     /* Align extras (attachments, buttons, embeds, images, etc.) with <usernames> . */
     padding-left: 0.55rem;
     font-size: 1rem;
     padding-bottom: 0;
 }
 
-.compact-2zYMSo.container-3-pyIM .iconContainer-3GkGRf {
+.compact-3bMNvi.container-x059i8 .iconContainer-2rPbqG {
     /* Align join message icons with timestamps */
     margin-right: 7.5px;
     margin-left: 11px;
 }
 
 /* conversation view */
-.group-spacing-0 .groupStart-23k01U {
+.group-spacing-0 .groupStart-3Mlgv1 {
     /* Remove un-customizable message spacing. */
     margin-top: 0rem;
 }
 
-.compact-T3H92H.wrapper-2a6GCs {
+.compact-2Nkcau.wrapper-30-Nkg {
     padding-top: 0;
     padding-bottom: 0;
 }
 
-.compact-T3H92H .header-23xsNx .timestamp-3ZCmNB {
+.compact-2Nkcau .header-2jRmjb .timestamp-p1Df1m {
     /* Make timestamp font same size as message text. */
     font-size: 1rem !important;
     width: 4rem !important;
@@ -109,12 +109,12 @@
     text-align: initial;
 }
 
-.compact-T3H92H .header-23xsNx .timestampVisibleOnHover-2bQeI4 {
+.compact-2Nkcau .header-2jRmjb .timestampVisibleOnHover-9PEuZS {
     /* Always show timestamps. */
     opacity: 1 !important;
 }
 
-.compact-T3H92H .messageContent-2qWWxC .emoji.jumboable {
+.compact-2Nkcau .messageContent-2t3eCI .emoji.jumboable {
     /* Jumbo emojis in compact mode */
     width: 3rem;
     height: 3rem;
@@ -122,50 +122,51 @@
     vertical-align: text-top;
 }
 
-.divider-3_HH5L {
+.divider-IqmEqJ {
     /* Make unread divider full length of conversation view. */
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
 
-.unreadPill-2HyYtt {
+.unreadPill-3nEWYM {
     /* Minimal unread divider (remove "NEW"). */
     display: none;
 }
 
-.markup-2BOw-j code,
-.codeView-1JPDeA {
+.markup-eYLPri code,
+.codeView-12LUIl,
+.content-vSHmMD {
     line-height: 1.25;
 }
 
 /* conversation text entry styling */
-.form-2fGMdU {
+.form-3gdLxP {
     /* Make it blend into the conversation view, as though typing into a terminal. */
     padding: 0;
     background: var(--background-primary);
 }
 
-.scrollableContainer-2NUZem {
+.scrollableContainer-15eg7h {
     background: var(--background-primary);
 }
 
-.form-2fGMdU .inner-MADQqc {
+.form-3gdLxP .inner-NQg18Y {
     /* Vertically center-align text area contents. */
     margin: 0;
     margin-top: 4.5px;
     margin-bottom: 4.5px;
 }
 
-.form-2fGMdU .channelTextArea-rNsIhG {
+.form-3gdLxP .channelTextArea-1FufC0 {
     margin-bottom: 0;
 }
 
-.scroller-2LSbBU {
+.scroller-kQBbkU {
     /* Adjust scroller padding appropriately. */
     margin-bottom: 0;
 }
 
-.scrollerSpacer-avRLaA {
+.scrollerSpacer-3AqkT9 {
     height: 0.5rem;
 }
 
@@ -176,42 +177,42 @@
     font-size: 0.65rem;
 }
 
-.ellipsis-19qdx6 {
+.ellipsis-1e7x0D {
     display: none !important;
 }
 
 /* conversation view > message styling */
-.repliedMessage-VokQwo:before,
-.replyBadge-r1su3o {
+.repliedMessage-3Z6XBG:before,
+.replyBadge-LMm_Ic {
     /* Hide reply badges, and the connecting line, as we signify replies with colors and
        the text style is unusual enough anyway to be obvious. */
     display: none !important;
 }
 
-.message-2qnXI6:hover {
+.message-2CShn3:hover {
     /* Brighten messages on hover */
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-.message-2qnXI6.mentioned-xhSam7:hover {
+.message-2CShn3.mentioned-Tre-dv:hover {
     /* Color-code mention, brighten on hover. */
     background-color: rgba(250, 166, 26, 0.1);
 }
 
-.message-2qnXI6.hasReply-34In-r {
+.message-2CShn3.hasReply-2Cr4KE {
     /* Color-code reply, brighten on hover. */
     background-color: rgba(114, 137, 218, 0.05);
 }
 
-.message-2qnXI6.hasReply-34In-r:hover {
+.message-2CShn3.hasReply-2Cr4KE:hover {
     background-color: rgba(114, 137, 218, 0.1);
 }
 
-.message-2qnXI6.hasReply-34In-r.mentioned-xhSam7 {
+.message-2CShn3.hasReply-2Cr4KE.mentioned-Tre-dv {
     /* Color-code reply+mention, brighten on hover. */
     background-color: rgba(250, 166, 26, 0.05);
 }
 
-.message-2qnXI6.hasReply-34In-r.mentioned-xhSam7:hover {
+.message-2CShn3.hasReply-2Cr4KE.mentioned-Tre-dv:hover {
     background-color: rgba(250, 166, 26, 0.1);
 }
